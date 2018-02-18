@@ -76,6 +76,13 @@ class Pubs {
       })
     }))
   }
+
+  getInvite () {
+    const invites = Object.keys(this.storage.content.pubs).map(k => this.storage.content.pubs[k]).filter(i => i.length)
+    if (!invites.length) return false
+    process.nextTick(() => this.storage.saveSync())
+    return invites[0].shift()
+  }
 }
 
 module.exports = Pubs
