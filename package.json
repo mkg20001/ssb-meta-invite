@@ -1,0 +1,23 @@
+{
+  "name": "ssb-meta-invite",
+  "version": "0.0.1",
+  "description": "Meta invite page/server which grabs random invites from random pubs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssb",
+    "meta",
+    "invite",
+    "pub"
+  ],
+  "author": "Maciej Krüger <mkg20001@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.0",
+    "hapi": "^17.2.0",
+    "inert": "^5.1.0",
+    "request": "^2.83.0"
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Secure Scuttlebutt Pub Server"/>
+  <title>Secure Scuttlebutt Pub Server</title>
+  <style>
+    html { background-color: #f8f9fa; }
+    body {
+      color: #212529;
+      font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: 0.02em;
+      padding-top: 30px;
+    }
+    a { color: inherit; }
+    footer {
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      text-align: center;
+      color: #adb5bd;
+    }
+
+    h1, p { text-align: center; margin: 0 auto; }
+    h1 { max-width: 15em; font-size: 1.3em; margin-bottom: 20px; }
+    p { margin-bottom: 5px; max-width: 500px; }
+    svg { margin: 10px auto; }
+
+    code {
+      text-align: left;
+      font-size: 18px;
+      overflow-wrap: break-word;
+      width: 400px;
+      max-width: 85vw;
+      padding: 6px 10px;
+      font-weight: 600;
+      background-color: #e9ecef;
+      border-radius: 3px;
+      color: #343a40;
+      overflow-x: scroll;
+      display: inline-block;
+    }
+    .show-qr {
+      display: inline-block;
+      padding: 6px 10px;
+      background-color: #edf2ff;
+      border-radius: 3px;
+      border-bottom: 2px solid #dbe4ff;
+      color: #364fc7;
+      font-size: 13px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Here is your personal invitation</h1>
+  <p><code>host3.zion.host:8008:@1Y8ifVbv75mPjtpwFXLFbZ+OlOqCxH9o355rxX0E5cI=.ed25519~PjntYhrkJ4XfxezYGvDxfsMFtWxzrUHgFjr8FdXANWg=</code></p>
+  <p>
+    <a class="show-qr" href="#">(Show QR code)</a>
+  </p>
+  <svg class="qr-code"
+    width="180px" height="180px"
+    viewBox="0 0 47 47"
+    style="display:none;"
+    xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M1 1h7v7h-7zM9 1h1v2h-1zM11 1h1v1h-1zM14 1h2v1h-1v2h-2v-1h1zM18 1h3v1h-1v1h1v-1h1v-1h1v1h1v-1h1v3h-1v1h3v-1h1v1h2v3h1v1h-1v1h-1v-1h-1v-1h1v-2h-1v2h-1v-1h-1v2h1v1h-1v1h-4v-1h-1v-3h-1v-2h1v-1h-1v1h-2v-1h1v-1h-1zM26 1h1v2h-1zM28 1h1v1h-1zM30 1h4v1h1v1h-1v1h-1v1h-1v-1h-1v-2h-1zM37 1h1v1h-1zM39 1h7v7h-7zM2 2v5h5v-5zM16 2h1v1h1v1h-2zM29 2h1v1h-1zM32 2v1h1v-1zM36 2h1v2h1v2h-3v1h-1v1h1v-1h1v2h-1v1h-1v-1h-2v-1h1v-1h-1v-1h1v-1h3zM40 2v5h5v-5zM3 3h3v3h-3zM10 3h1v1h-1zM22 3v2h1v-2zM28 3h1v1h-1zM41 3h3v3h-3zM9 4h1v1h-1zM12 4h1v1h-1zM15 4h1v1h-1zM30 4h1v1h-1zM11 5h1v1h-1zM13 5h1v1h2v-1h2v1h-1v1h-1v1h-1v-1h-1v1h1v1h-1v1h1v-1h1v1h1v1h-2v2h-1v-2h-2v1h-1v-3h1v1h1v-1h-1v-1h1v-1h-1v-1h1zM22 6v3h3v-3zM9 7h1v2h-1zM11 7h1v1h-1zM17 7h1v2h-2v-1h1zM19 7h1v1h-1zM23 7h1v1h-1zM31 7h1v1h-1zM37 7h1v1h-1zM1 9h1v2h-1zM3 9h2v1h-2zM6 9h3v1h-3zM36 9h2v3h-3v-1h2v-1h-1zM39 9h1v1h-1zM42 9h1v1h1v1h-3v-1h1zM44 9h2v3h-1v1h-1v-2h1v-1h-1zM5 10h1v3h-2v-1h1zM18 10h3v1h-2v1h-2v-1h1zM28 10h1v1h-1zM30 10h2v1h1v1h1v1h-2v-1h-1v2h-1v-1h-1v-1h1zM33 10h1v1h-1zM7 11h1v1h-1zM9 11h1v1h1v1h-1v2h-1v1h-3v-1h-2v-1h2v-1h3zM21 11h1v1h2v1h1v1h-2v2h-2v-1h1v-1h-1zM26 11h1v1h1v1h-3v-1h1zM1 12h1v1h-1zM16 12h1v1h-1zM19 12h1v2h1v1h-1v1h1v1h1v1h-2v-1h-1v-3h-2v-1h2zM41 12h2v1h-2zM2 13h2v1h-1v1h-1zM34 13h1v2h-1zM36 13h2v1h-2zM45 13h1v2h-1zM7 14v1h1v-1zM11 14h1v1h-1zM16 14h1v1h-1zM26 14h2v1h-1v1h-1zM38 14h4v1h1v1h1v1h1v-1h1v3h-1v-1h-2v1h-1v2h2v1h-1v1h-1v1h1v2h-2v1h-3v2h-1v1h-1v-1h-1v-1h2v-1h-1v-1h1v-4h-2v-4h1v-2h1v-1h1v1h1v-1h-1zM13 15h1v1h1v-1h1v2h-1v1h-1v1h3v2h2v1h-1v1h-1v-1h-1v-1h-1v1h1v1h-1v1h-1v-1h-2v-1h1v-2h-3v-2h-1v-2h1v1h1v2h1v-3h1zM24 15h1v1h-1zM32 15h2v2h1v1h-1v3h-1v-1h-1v-1h1v-1h-1v-1h-1v1h-1v-1h-1v1h1v1h1v1h-3v1h-1v2h1v1h1v2h-1v1h-1v1h-1v-1h-1v-1h-1v1h1v1h1v1h-2v-1h-2v-1h1v-1h-3v-1h-1v-3h1v-3h3v2h2v-2h-1v-1h2v2h1v-1h1v-3h4zM35 15h1v1h-1zM40 15v1h1v-1zM1 16h1v1h2v2h-2v-1h-1zM5 16h1v1h-1zM17 16h1v1h1v1h1v1h-3v-1h-1v-1h1zM25 16h1v1h-1zM7 17h1v1h-1zM23 17h1v1h-1zM38 17v1h-1v1h1v1h1v1h1v-1h1v-1h-1v-1h2v-1zM1 19h1v1h-1zM4 19h4v1h-2v1h3v-1h1v2h1v1h1v1h-2v1h2v1h-1v2h-2v1h-1v-1h-2v-1h3v-1h-3v1h-3v-1h-1v3h1v2h3v1h1v1h1v1h-1v1h-1v-2h-1v1h-2v1h-2v-1h1v-4h-1v-6h1v-1h1v-1h1v2h-1v1h1v1h1v-4h-1v-1h-2v-1h2zM39 19h1v1h-1zM43 19h1v1h-1zM31 20h1v2h1v1h3v1h-1v1h1v1h-2v-1h-1v-1h-1v1h-1v-1h-1v-2h-2v-1h3zM44 20h2v1h-2zM1 22h1v1h-1zM6 22v3h3v-3zM22 22v3h3v-3zM38 22v3h3v-3zM44 22h2v3h-1v-2h-1zM7 23h1v1h-1zM16 23h1v1h-1zM20 23v1h1v-1zM23 23h1v1h-1zM39 23h1v1h-1zM43 23h1v1h-1zM12 24h1v1h-1zM15 24h1v1h1v2h1v1h-2v3h-2v-1h-1v-1h2v-1h-2v1h-1v1h1v1h1v1h-2v-1h-1v-1h-1v-1h1v-1h1v-2h1v1h3v-1h-3v-1h2zM18 25h1v2h-1zM26 25v1h1v-1zM32 25h1v1h1v2h-1v1h1v1h2v1h-1v2h1v1h-1v1h1v-1h1v2h1v1h1v-1h-1v-1h2v1h1v-1h2v2h-1v1h1v1h1v-1h1v2h-1v1h1v-1h1v3h-1v-1h-2v-1h-1v1h-1v3h-1v1h-2v-1h-1v1h-1v-2h-1v1h-1v-3h1v-2h1v2h1v-2h-1v-2h1v-1h-1v-1h-2v-5h-2v-1h-1v1h-1v-2h-1v-2h1v1h1v-1h1zM44 25h1v1h-1zM43 26h1v1h-1zM20 27h1v1h1v2h-1v-1h-1zM42 27h1v1h3v3h-1v-1h-1v-1h-2v2h-1v-1h-1v-2h2zM3 28h3v1h-3zM18 28h1v2h-1v1h1v-1h2v1h-1v1h-1v5h-1v-3h-2v2h-1v-1h-1v-1h-1v3h1v4h1v1h-2v-1h-1v-2h1v-1h-1v-4h-1v3h-1v-3h-1v-1h1v-1h2v1h4v-1h1v-3h1zM27 28h1v2h-1zM6 29h2v1h-2zM38 29h1v1h1v1h-1v3h-2v-1h-1v-1h1v-2h1zM22 30h1v1h-1zM26 30h1v1h2v2h1v1h-1v3h-3v-1h1v-1h1v-1h-1v-1h1v-1h-3v-1h1zM7 31h3v1h-3zM21 31h1v1h-1zM40 31h1v3h-1zM42 31h1v1h-1zM44 31h1v2h-1zM23 32h1v1h1v1h-1v1h-1v-1h-1v-1h1zM30 32h2v5h1v1h-2v-1h-1v-1h1v-3h-1zM20 34h2v1h1v2h3v1h4v1h-1v1h-1v-1h-1v1h-1v2h1v1h2v-1h1v-1h-1v-1h2v1h1v1h-1v2h1v2h-1v-1h-1v1h-2v-2h-2v-1h-1v-1h-1v2h2v1h-1v1h-3v-1h1v-3h-2v-1h-1v-1h1v-1h-2v2h-1v-1h-1v-1h1v-1h1v-1h1v-1h1v1h1v-1h-1v-1h-1zM25 34h2v1h-1v1h-1zM5 35h1v3h-2v-1h-2v-1h3zM7 35h2v1h-2zM44 35h2v1h-1v1h-1zM1 37h1v1h-1zM7 37h2v1h-2zM15 37h2v1h-1v2h-1zM34 37h2v1h-1v2h-1zM9 38h2v1h-1v2h-1zM22 38v3h3v-3zM38 38v3h3v-3zM1 39h7v7h-7zM23 39h1v1h-1zM32 39h1v1h1v2h-1v-1h-1zM39 39h1v1h-1zM2 40v5h5v-5zM3 41h3v3h-3zM10 41h1v1h1v1h-2v1h-1v-2h1zM16 41h2v1h-2zM19 41h1v1h-1zM27 41h1v1h-1zM38 42v1h1v1h1v-2zM12 43h1v2h1v1h-5v-1h2v-1h1zM14 43h1v1h1v1h-2zM16 43h5v1h-2v1h1v1h-2v-1h-1v-1h-1zM43 43h2v1h-2zM45 44h1v1h-1zM43 45h1v1h-1z" />
+  </svg>
+  <p>
+    You can copy and paste this code into an application like
+    <a href="https://ssbc.github.io/patchwork/">Patchwork</a>,
+    <a href="https://github.com/ssbc/patchbay">Patchbay</a>, or
+    <a href="https://github.com/mmckegg/patchwork-next">Patchwork-next</a>
+    to join the social network.
+  </p>
+  <footer>
+    This server is <a href="https://github.com/staltz/easy-ssb-pub">open source</a> under the MIT license.
+  </footer>
+
+  <script>
+    var showQrElem = document.getElementsByClassName("show-qr")[0];
+    var qrCodeSVG = document.getElementsByClassName("qr-code")[0];
+    var qrVisible = false;
+    showQrElem.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      if (qrVisible) {
+        qrCodeSVG.style.display = "none";
+        showQrElem.innerHTML = "(Show QR code)"
+      } else {
+        qrCodeSVG.style.display = "block";
+        showQrElem.innerHTML = "(Hide QR code)"
+      }
+      qrVisible = !qrVisible;
+    });
+  </script>
+</body>
+</html>

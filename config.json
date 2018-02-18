@@ -1,0 +1,16 @@
+{
+  "pubs": [
+    "pub.heropunch.io",
+    "ssb.ekata.social",
+    "ssb.microcultu.re",
+    "host4.zion.host",
+    "host3.zion.host",
+    "ssb.exitsystemcall.com",
+    "pub.hypersignal.xyz",
+    "https://ssb.scuttle-butt.in"
+  ],
+  "file": "./storage.json",
+  "options": {
+    "cacheInvites": 2
+  }
+}
